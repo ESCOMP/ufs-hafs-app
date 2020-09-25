@@ -71,7 +71,7 @@ def read_externals_description_file(root_dir, file_name):
     root_dir = os.path.abspath(root_dir)
     msg = 'In directory : {0}'.format(root_dir)
     logging.info(msg)
-    printlog('Processing externals description file : {0}'.format(file_name))
+    logging.info('Processing externals description file : {0}'.format(file_name))
 
     file_path = os.path.join(root_dir, file_name)
     if not os.path.exists(file_name):
@@ -199,7 +199,7 @@ def read_gitmodules_file(root_dir, file_name):
     root_dir = os.path.abspath(root_dir)
     msg = 'In directory : {0}'.format(root_dir)
     logging.info(msg)
-    printlog('Processing submodules description file : {0}'.format(file_name))
+    logging.info('Processing submodules description file : {0}'.format(file_name))
 
     file_path = os.path.join(root_dir, file_name)
     if not os.path.exists(file_name):
